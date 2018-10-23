@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 项目dev1.0
+ * d2
  */
 @SpringBootApplication
 public class Application {
