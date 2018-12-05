@@ -34,8 +34,8 @@
         update ${table}
         <set>
        <#list columns as column>
-           <if test="${column.columnNameLower} !=null and ${column.columnNameLower} !=''">${column.originalColumnName} = ${jh}
-               {${column.columnNameLower},jdbcType=${column.colType}},
+           <if test="${column.columnNameLower} !=null and ${column.columnNameLower} !=''">
+           ${column.originalColumnName} = ${jh}{${column.columnNameLower},jdbcType=${column.colType}},
            </if>
        </#list>
         </set>
